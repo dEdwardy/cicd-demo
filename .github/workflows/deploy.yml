@@ -28,20 +28,7 @@ jobs:
         # Artifact name
         name: artifact
         # Path of the directory containing the static assets.
-        path: './dist'
+        path: "./dist"
         # Duration after which artifact will expire in days.
         retention-days: 1
-    # - name: Deploy GitHub Pages site
-    #   uses: actions/deploy-pages@v4.0.5
-    #   with:
-    #     # GitHub token
-    #     token: ${{ github.token }}
-    #     # Time in milliseconds after which to timeout and cancel the deployment (default: 10 minutes)
-    #     timeout: 600000
-    #     # Maximum number of status report errors before cancelling a deployment (default: 10)
-    #     error_count: 10
-    #     # Time in milliseconds between two deployment status report (default: 5 seconds)
-    #     reporting_interval: 10000
-    #     # Name of the artifact to deploy
-    #     artifact_name: artifact
           
