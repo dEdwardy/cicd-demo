@@ -23,12 +23,12 @@ jobs:
     - run: npm run build
 
     - name: Upload GitHub Pages artifact
-      uses: actions/upload-pages-artifact@v3.0.1
+      uses: actions/upload-pages-artifact@v3
       with:
         # Artifact name
         name: artifact
         # Path of the directory containing the static assets.
-        path: dist
+        path: './dist'
         # Duration after which artifact will expire in days.
         retention-days: 1
     # - name: Deploy GitHub Pages site
