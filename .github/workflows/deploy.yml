@@ -20,12 +20,12 @@ jobs:
           node-version: 'latest'
     - run: npm install
     - run: npm run build
-    - name: Deploy to GitHub Pages
-      uses: actions/deploy-page
-      # uses: peaceiris/actions-gh-pages@v3.9.3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # 指向你的构建输出目录
+    # - name: Deploy to GitHub Pages
+    #   uses: actions/deploy-page
+    #   # uses: peaceiris/actions-gh-pages@v3.9.3
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: ./dist  # 指向你的构建输出目录
 
     - name: Deploy
       # 使用别人写好的 actions去部署（将打包文件部署到指定分支上）
