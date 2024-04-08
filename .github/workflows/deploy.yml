@@ -17,6 +17,6 @@ jobs:
     - name: Build
       uses: actions/steup-node@master
       with:
-          node-version:'latest'
+          node-version:'21.7.1'
     - run: npm install
     - run: npm run build
